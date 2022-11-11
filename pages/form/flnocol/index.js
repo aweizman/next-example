@@ -1,11 +1,11 @@
 import { Col, Row } from 'reactstrap'
-import TextField from '../components/Fields/TextFields'
-import FormWrapper from '../components/FormWrapper'
+import TextField from '../../../components/Fields/TextFields'
+import FormWrapper from '../../../components/FormWrapper'
 
 const initialValues = {}
 const transform = {}
 
-const Example = () =>
+const FlNocol = () =>
   <FormWrapper initialValues={initialValues} transform={transform}>
     <Row>
       <Col><TextField name='firstName' label='First Name' /></Col>
@@ -22,6 +22,11 @@ const Example = () =>
         </Row>
       </Col>
     </Row>
+    <Row>
+      <Col><TextField name='firstName' label='First Name' /></Col>
+      <Col><TextField name='middleName' label='Middle Name' /></Col>
+      <Col><TextField name='lastName' label='Last Name' /></Col>
+    </Row>
   </FormWrapper>
 
-export default Example
+export default FlNocol
