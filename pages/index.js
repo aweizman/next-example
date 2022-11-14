@@ -1,9 +1,16 @@
 import { Col, Row } from 'reactstrap'
+import SelectField from '../components/Fields/SelectField'
 import TextField from '../components/Fields/TextFields'
 import FormWrapper from '../components/FormWrapper'
 
 const initialValues = {}
 const transform = {}
+
+const stateCodeOptions = [
+  { value: 'FL', label: 'FL' },
+  { value: 'GA', label: 'GA' },
+  { value: 'TX', label: 'TX' }
+]
 
 const Example = () =>
   <FormWrapper initialValues={initialValues} transform={transform}>
@@ -17,7 +24,7 @@ const Example = () =>
       <Col sm='7'>
         <Row>
           <Col sm='6'><TextField name='city' label='City' /></Col>
-          <Col sm='2'><TextField name='state' label='State' /></Col>
+          <Col sm='2'><SelectField name='state' label='State' options={stateCodeOptions} /></Col>
           <Col sm='4'><TextField name='zip' label='Zip' /></Col>
         </Row>
       </Col>

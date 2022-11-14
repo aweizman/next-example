@@ -12,10 +12,12 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "bootstrap": "^5.2.2",
+    "i18next": "^22.0.5",
     "next": "13.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.39.1",
+    "react-i18next": "^12.0.0",
     "reactstrap": "^9.1.5",
     "standard": "^17.0.0"
   },

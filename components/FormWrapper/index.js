@@ -2,6 +2,10 @@ import React from 'react'
 import { FormProvider, useForm } from 'react-hook-form'
 import { Button, Col, Container, Form, Row } from 'reactstrap'
 
+/*
+  formState: { defaultValues, errors, isDirty, isSubmitSuccessful, isSubmitted, isSubmitting, isValid, isValidating, submitCount, touchedFields }
+*/
+
 const Title = () => <h1>Example Form</h1>
 
 const SubmitButton = () =>
@@ -19,7 +23,7 @@ const FormWrapper = ({ children }) => {
   })
 
   const onSubmit = data => {
-    methods.reset()
+    console.log(data)
   }
 
   return (
