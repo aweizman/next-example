@@ -11,7 +11,7 @@ const Title = () => <h1>Example Form</h1>
 const SubmitButton = () =>
   <Row>
     <Col>
-      <Button name='submit' className='w-100'>Submit</Button>
+      <Button name='submit' className='mt-1 w-100'>Submit</Button>
     </Col>
   </Row>
 
