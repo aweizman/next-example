@@ -1,0 +1,35 @@
+@import url("https://static.add123.com/cdn/add-style/latest/add-style.min.css");
+
+@import "~addstrap/scss/style";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+.invalid-field-message {
+  margin-top: -2px;
+  font-size: .8rem;
+  position: absolute;
+  color: $danger;
+  width: 100%;
+}
+
+.is-invalid.form-control{
+  background-image: none;
+  background-color: #ffe6e6;
+}
+
+.form-control {
+  padding-left: 0.5rem;
+}
+
+select.form-control {
+  padding-left: 0.25rem;
+}
+
+.input-group-prepend .input-group-text {
+  border-right-color: transparent;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

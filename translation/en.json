@@ -1,0 +1,10 @@
+{
+  "ErrorFeedback" :{
+    "required": "Required",
+    "invalid": "Invalid",
+    "maxLength": "Must be {{max}} characters or less",
+    "maxValue": "Value must be {{max}} or less",
+    "minDate": "Date must be on or after {{min}}",
+    "maxDate": "Date must be on or before {{max}}"
+  }
+}
