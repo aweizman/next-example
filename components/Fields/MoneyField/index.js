@@ -32,6 +32,7 @@ const renderMoneyFieldInput = (props, controllerProps) => {
       <Input
         type='text'
         name={name}
+        data-testid={name}
         value={normalizeMoney(value)}
         onChange={onChange}
         onBlur={onBlur}

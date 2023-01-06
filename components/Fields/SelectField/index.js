@@ -24,7 +24,7 @@ const renderSelectFieldInput = (props, controllerProps) => {
   const invalid = isInvalid(fieldState, formState)
 
   return (
-    <Input type='select' name={name} value={value} onChange={onChange} onBlur={onBlur} invalid={invalid}>
+    <Input type='select' name={name} data-testid={name} value={value} onChange={onChange} onBlur={onBlur} invalid={invalid}>
       <option value=''> </option>
       {selectOptionBuilder(options, t)}
     </Input>

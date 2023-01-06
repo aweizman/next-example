@@ -11,8 +11,10 @@ const isInvalid = (fieldState, formState) => {
 
 const buildOnChange = (parse, field) => {
   const { onChange } = field
-
-  return e => onChange(parse(e.target.value))
+  if (parse) {
+    return e => onChange(parse(e.target.value))
+  }
+  return e => onChange(e.target.value)
 }
 
 const renderTextFieldInput = (props, controllerProps) => {
@@ -29,6 +31,7 @@ const renderTextFieldInput = (props, controllerProps) => {
     <Input
       type='text'
       name={name}
+      data-testid={name}
       value={value}
       onChange={onChange}
       onBlur={onBlur}
